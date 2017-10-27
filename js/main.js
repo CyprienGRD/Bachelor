@@ -25,7 +25,7 @@
             url: "lettre.php",                       // Au php lettre.php
             data: { "lettre": cons}
         })
-        .done(function( e ) {                       // L'ajax renvoi une réponse
+        .done(function( e ) {                       // L'ajax envoi réponse
             console.log( "Data Saved: " + e );      // On l'affiche dans le log
         });
     })
@@ -38,7 +38,7 @@
             url: "lettre.php",                       // Au php lettre.php
             data: { "lettre": voye}
         })
-        .done(function( e ) {                       // L'ajax renvoi une réponse
+        .done(function( e ) {                       // L'ajax envoi une réponse
             console.log( "Data Saved: " + e );      // On l'affiche dans le log
         });
     })
