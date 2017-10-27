@@ -251,7 +251,7 @@ input:hover{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
     /* For mobile phones: */
     html {
@@ -328,7 +328,86 @@ input:hover{
         border: 1px solid darkgrey;
     }
 }
-
+@media only screen and (min-width: 600px) {
+    /* Style adjustments for viewports that meet the condition */
+    /* For tablets: */
+    html {
+        color: #222;
+        font-size: 1em;
+        line-height: 1.4;
+    }
+    body{
+        background-color: rgba(88, 125, 166, 0.25);
+    }
+    h1.titre, h2.soustitre{
+        text-align: center;
+        font-family: 'Anton', sans-serif;
+    }
+    h2.soustitre{
+        font-size: 20px;
+    }
+    .bouton{
+        width: 103px;
+        justify-content: center;
+        border: none;
+        padding:6px 0 6px 0;
+        border-radius:8px;
+        background: #9d9d9d;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #000000;
+        margin: 0 5px;
+    }
+    .bouton:hover{
+        background: #3d3d3d;
+        color: white;
+    }
+    .bouton2{
+        width: 215px;
+        justify-content: center;
+        border: none;
+        padding:6px 0 6px 0;
+        border-radius:8px;
+        background: #9d9d9d;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #000000;
+        margin: 0 5px;
+    }
+    .bouton2:hover{
+        background: #3d3d3d;
+        color: white;
+    }
+    #lettre1,#lettre2,#lettre3,#lettre4,#lettre5,#lettre6,#lettre7,#lettre8,#lettre9{
+        border-bottom: 1px solid black;
+        width:13px;
+        margin: 0 10px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 20px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        text-align: center;
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+    input{
+        width: 215px;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    input:hover{
+        border: 1px solid darkgrey;
+    }
+}
+@media only screen and (orientation: landscape) {
+    /*Orientation portrait*/
+}
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),

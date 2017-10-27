@@ -1,6 +1,6 @@
 <?php
-    $serveur = "localhost";
-    $base = 'DCDL';
+    $serveur = "localhost"; //172.29.20.213
+    $base = 'DCDL'; //nom de la base
     $utilisateur = 'root';
     $motDePasse = 'root';
     try{
