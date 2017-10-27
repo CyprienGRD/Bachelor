@@ -140,10 +140,6 @@ h2.soustitre{
     margin-top: 15px;
     text-align: center;
 }
-a, a:hover{
-    text-decoration: none;
-    color: #000;
-}
 hr {
     border: 0;
     height: 1px;
@@ -152,7 +148,7 @@ hr {
 input{
     width: 215px;
     height: 30px;
-    border: none;
+    border: 1px solid white;
     border-radius: 10px;
 }
 input:hover{
@@ -255,8 +251,9 @@ input:hover{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
+    /* For mobile phones: */
     html {
         color: #222;
         font-size: 1em;
@@ -316,10 +313,6 @@ input:hover{
         margin-top: 15px;
         text-align: center;
     }
-    a, a:hover{
-        text-decoration: none;
-        color: #000;
-    }
     hr {
         border: 0;
         height: 1px;
@@ -328,8 +321,8 @@ input:hover{
     input{
         width: 215px;
         height: 30px;
-        border: none;
         border-radius: 10px;
+        border: 1px solid white;
     }
     input:hover{
         border: 1px solid darkgrey;

@@ -2,20 +2,20 @@
 (function(){
     //Generation d'un chiffre
     function aleatoire(min, max) {
-        return (Math.floor((max-min)*Math.random())+min);
+        return (Math.floor((max-min)*Math.random())+min); //retourne un chiffre aleatoire
     }
     //Generation d'une voyelle
-    var voy = ["a", "e", "i", "o", "u", "y"];
+    var voy = ["a","e","i","o","u","y"];
     function VoyeAlea(){
-        return(voy[aleatoire(0,voy.length)]);
+        return(voy[aleatoire(0,voy.length)]); //retourne une consonne aleatoire entre 0 et 6
     }
     //Generation d'une consonne
     var con = ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"];
     function ConsAlea(){
-        return(con[aleatoire(0,con.length)]);
+        return(con[aleatoire(0,con.length)]); //retourne une consonne aleatoire entre 0 et 21
     }
     //Ajouter une lettre + incrementer nbUtilisation dans la BDD
-    var compteur =1;
+    var compteur=1;
     $("button#cons").click(function(){
         var cons= ConsAlea();
         $("#lettre"+compteur).html(cons);
