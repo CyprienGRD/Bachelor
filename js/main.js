@@ -16,10 +16,10 @@
     }
     //Ajouter une lettre + incrementer nbUtilisation dans la BDD
     var compteur=1;
-    $("button#cons").click(function(){
-        var cons= ConsAlea();
-        $("#lettre"+compteur).html(cons);
-        compteur ++;
+    $("button#cons").click(function(){              // a l'appui du bouton
+        var cons= ConsAlea();                       // creation de la consonne aleatoire
+        $("#lettre"+compteur).html(cons);           // insertion dans la page html de la consonne a la bonne place
+        compteur ++;                                // incrementation du compteur de position
         $.ajax({                                     // On execute un ajax
             method: "GET",                           // D'une méthode GET
             url: "lettre.php",                       // Au php lettre.php
@@ -29,10 +29,10 @@
             console.log( "Data Saved: " + e );      // On l'affiche dans le log
         });
     })
-    $("button#voye").click(function(){
-        var voye= VoyeAlea();
-        $("#lettre"+compteur).html(voye);
-        compteur++;
+    $("button#voye").click(function(){              // a l'appui du bouton
+        var voye= VoyeAlea();                       // creation de la voyelle aleatoire a la bonne place
+        $("#lettre"+compteur).html(voye);           // Insertion dans la page html de la voyelle
+        compteur++;                                 //incrementation du compteur de position
         $.ajax({                                     // On execute un ajax
             method: "GET",                           // D'une méthode GET
             url: "lettre.php",                       // Au php lettre.php
